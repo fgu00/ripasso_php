@@ -16,7 +16,7 @@ if(!empty($_POST)){
         if($_COOKIE['massimo']<$_POST['valore']){
             setcookie("massimo",$_POST["valore"]);   
         }
-        if($_COOKIE['minimo']>$_POST['valore'])
+        if($_COOKIE['minimo']>$_POST['valore']){
         setcookie("minimo",$_POST["valore"]);
         }
         $mid=$tot/($_COOKIE["media"]+1);
@@ -26,4 +26,5 @@ if(!empty($_POST)){
         echo $_COOKIE["massimo"]+"</br>";
         echo $_COOKIE["minimo"]+"</br>";
         echo $mid+"</br>";
+    }
 ?>
